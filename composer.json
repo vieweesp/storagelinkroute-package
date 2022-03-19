@@ -1,0 +1,32 @@
+{
+    "name": "vieweesp/storagelinkroute-package",
+    "description": "A route to create a symlink from 'public/storage' to 'storage/app/public'",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vieweesp\\StoragelinkroutePackage\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+          "Vieweesp\\StoragelinkroutePackage\\Tests\\": "tests"
+        }
+      },
+    "authors": [
+        {
+            "name": "vieweesp",
+            "email": "vieweesp@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "orchestra/testbench": "^7.1",
+        "phpunit/phpunit": "^9.5"
+    },
+    "extra":{
+        "laravel": {
+            "providers": [
+                "Vieweesp\\StoragelinkroutePackage\\Providers\\RoutestoragelinkServiceProvider"
+            ]
+        }
+    }
+}
